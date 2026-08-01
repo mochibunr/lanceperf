@@ -1,0 +1,7 @@
+id=lancelot-perf
+name=Lancelot Performance Booster
+version=v1.0
+versionCode=1
+author=mochibunr
+description=Performance tweaks for Redmi 9 (lancelot) - VFS cache, memory, scheduler, I/O, GPU, network optimizations
+updateJson=https://github.com/mochibunr/lanceperf.git

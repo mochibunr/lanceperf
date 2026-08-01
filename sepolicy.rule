@@ -1,0 +1,11 @@
+# Lancelot Performance Booster - SELinux Policy Rules (KernelSU)
+# Allow ksud to write to proc/sysfs nodes
+
+allow ksud kernel:system module_request
+allow ksud proc_sys:file { write open getattr }
+allow ksud sysfs:dir { write open search }
+allow ksud sysfs:file { write open getattr }
+allow ksud system_file:file { write execute execute_no_trans }
+allow ksud shell_exec:file { read execute open getattr }
+allow ksud vendor_sysfs_touch:dir { write open search }
+allow ksud vendor_sysfs_touch:file { write open getattr }
